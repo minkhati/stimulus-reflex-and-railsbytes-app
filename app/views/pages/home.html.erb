@@ -1,0 +1,13 @@
+
+<div class="container" style="text-align:center">
+  <h1>Your text contains</h1>
+  <p>
+    <%= pluralize(@word_count, "word") %>
+  </p>
+  <hr />
+  <div class="row">
+    <textarea id="data-entry" type="text" rows="8" data-reflex="keyup->CalculatorReflex#calculate" placeholder="Type Something..." class="form-control form-control-lg d-inline-block col-4"><%= @words %></textarea>
+    <textarea id="data-exit" type="text" rows="8" placeholder="Your reversed text..." class="form-control form-control-lg d-inline-block col-4"><%= @reversed %></textarea>
+  </div>
+
+</div>
